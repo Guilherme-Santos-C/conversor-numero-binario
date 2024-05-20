@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #1C0221;
+    --secundary-color: #F5EFED;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--secundary-color);
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    width: 100vw;
+}
+
+.upside-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12rem;
+}
+
+.convert-button{
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.convert-button:active{
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container-input label {
+    font-size: 2rem;
+}
+
+.container-input input {
+    width: 15rem;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    outline: none;
+}
+
+.downside-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .downside-content img {
+    height: 5rem;
+    position: relative;
+    right: -0.6rem;
+    cursor: pointer;
+} */
+
+.downside-content .click {
+    height: 5rem;
+    position: relative;
+    right: -0.6rem;
+    cursor: pointer;
+    transition: 3s all;
+    transform: rotate(180deg);
+}
